@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft_Magenta: hsl(300, 69%, 71%);
+    --hf: 'Open Sans', sans-serif;
+    --bf: 'Poppins', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--Violet);
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 1rem auto;
+    color: aliceblue;
+    padding: 0rem 8rem;
+}
+nav > img{
+    max-width: 15rem;
+}
+main{
+    padding: 3rem, 0px;
+    display: flex;
+    margin: 3rem auto;
+    max-width: 100%;
+    gap: 2rem;
+}
+.left{
+    margin: auto;
+    max-width: 50%;
+}
+.left > img{
+    width: 100%;
+}
+.right{
+    max-width: 50%;
+    gap: 1rem;
+}
+.right > p:first-child{
+    font-family: var(--bf);
+    font-weight: 600;
+    color: black;
+    font-size: calc(2vw + 1rem);
+}
+.right > p:nth-child(2){
+    font-family: var(--bf);
+}
+button{
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 9999px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0,0 , 0.2);
+}
+@media screen and (max-width:800px) {
+    main{
+        flex-direction: column;
+    }
+    :is(.left, .right){
+        max-width: 100%;
+    }
+    .right{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
