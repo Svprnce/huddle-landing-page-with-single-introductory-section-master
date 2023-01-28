@@ -12,7 +12,7 @@
     --bf: 'Poppins', sans-serif;
 }
 img{
-    max-width: 100%;
+    width: 100%;
 }
 body{
     min-height: 100vh;
@@ -22,19 +22,19 @@ body{
     background-position: center;
     background-size: cover;
     max-width: 1440px;
-    margin: 1rem auto;
+    margin: 2rem auto;
     color: aliceblue;
-    padding: 0rem 8rem;
+    padding-inline: min(2rem, 8rem);
 }
 nav > img{
     max-width: 15rem;
 }
 main{
-    padding: 3rem, 0px;
+    padding-block: min(3rem,5rem);
     display: flex;
     margin: 3rem auto;
     max-width: 100%;
-    gap: 2rem;
+    gap: 5rem;
 }
 .left{
     margin: auto;
@@ -66,7 +66,7 @@ button{
 }
 @media screen and (max-width:800px) {
     body{
-        padding:0rem, 1rem:
+        padding:0rem, 1rem;
     }
     main{
         flex-direction: column;
